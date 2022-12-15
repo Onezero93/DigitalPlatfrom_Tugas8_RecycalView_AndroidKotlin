@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="144dp"
+                android:layout_height="144dp"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="Prof. Gabut M.kom"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:id="@+id/title"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="58dp"
+                        android:ellipsize="end"
+                        android:id="@+id/des"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="20dp"
+                        android:maxLines="3"
+                        android:text="aku seorang gabut yang sedang mengerjakan sesuatu yang gabut. aku gabut hhehh" />
+                    <ImageView
+                        android:layout_marginTop="90dp"
+                        android:background="@drawable/ic_baseline_star_24"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"/>
+                    <TextView
+                        android:text="4.5"
+                        android:id="@+id/star"
+                        android:layout_marginTop="100dp"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
