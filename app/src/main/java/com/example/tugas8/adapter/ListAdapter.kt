@@ -4,8 +4,8 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.crycelview_list.model.DataList
 import com.example.tugas8.databinding.ItemListBinding
+import com.example.tugas8.model.DataList
 
 class ListAdapter(private val content: Context): RecyclerView.Adapter<ListAdapter.AplikasiViewHolder>() {
     private val list = ArrayList<DataList>()

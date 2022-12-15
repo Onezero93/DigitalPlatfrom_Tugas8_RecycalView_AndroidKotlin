@@ -1,4 +1,4 @@
-package com.example.crycelview_list.model
+package com.example.tugas8.model
 
 
 data class DataList(
