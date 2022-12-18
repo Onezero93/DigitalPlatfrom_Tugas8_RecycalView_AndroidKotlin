@@ -1,9 +1,11 @@
 package com.example.crycelview_list.adapter
 
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.tugas8.List_Detail
 import com.example.tugas8.databinding.ItemListBinding
 import com.example.tugas8.model.DataList
 
@@ -23,6 +25,12 @@ class ListAdapter(private val content: Context): RecyclerView.Adapter<ListAdapte
             binding.des.text = data.des
             binding.star.text = data.rating.toString()
             itemView.setOnClickListener{
+                val intent = Intent(content,List_Detail::class.java)
+                intent.putExtra("imag",data.image)
+                intent.putExtra("nama",data.nama)
+                intent.putExtra("desc",data.des)
+                intent.putExtra("reting",data.rating)
+                content.startActivity(intent)
             }
         }
     }
@@ -33,8 +41,6 @@ class ListAdapter(private val content: Context): RecyclerView.Adapter<ListAdapte
 
     override fun onBindViewHolder(holder: AplikasiViewHolder, position: Int) {
         holder.bind(list[position])
-        holder.itemView.setOnClickListener{
-        }
     }
 
     override fun getItemCount(): Int = list.size
